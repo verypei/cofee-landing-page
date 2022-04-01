@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+    background-image: url("./assets/background.png");
+}
+.container{
+    height: 100vh;
+    width:100vw;
+
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+
+    display: grid;
+
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 10% 1fr 1fr 5%;
+
+    gap: 30px;
+
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+.container > div{
+    padding: 10px;
+}
+.logo{
+    grid-column-start: 2;
+}
+.menu{
+    grid-column-start: 5;
+    grid-column-end: 11;
+    padding-bottom: 0%;
+}
+.menu > p{
+    display: flex;
+    /* position: j; */
+    font-size: 12px;
+}
+.cart{
+    grid-column-start: 11;
+    padding-bottom: 0;
+}
+.profile-pic{
+    grid-column-start: 12;
+    padding-top: auto;
+}
+.big-coffee{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 6;
+}
+.main-text{
+    grid-row-start:2;
+    grid-column-start:6;
+    grid-column-end:10;
+}
+.coffee-list{
+    grid-row-start:3;
+    grid-column-start:6;
+    grid-column-end:13;
+}
+.big-card{
+    grid-row-start:3;
+    grid-column-start:2;
+    grid-column-end:5;
+}
+#be-active-text{
+    color: red;
+}
+#barnsley-text{
+    color: brown;
+}
+#coffee-text{
+    color:brown;
+}
+#top-packs-text{
+    color:gray;
+}
