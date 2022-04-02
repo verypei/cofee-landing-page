@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 body{
     margin: 0;
     background-image: url("./assets/background.png");
@@ -6,16 +7,14 @@ body{
     height: 100vh;
     width:100vw;
 
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
 
     display: grid;
 
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: 10% 1fr 1fr 5%;
 
-    gap: 30px;
+    gap: 10px;
 
     padding-right: 30px;
     padding-left: 30px;
@@ -35,32 +34,38 @@ body{
 }
 .menu > p{
     display: flex;
-    /* position: j; */
+    justify-content: space-evenly;
     font-size: 12px;
+    text-decoration: none;
+    font-weight: bold;
+}
+a{
+    color: black;
 }
 .cart{
     grid-column-start: 11;
     padding-bottom: 0;
 }
 .profile-pic{
-    grid-column-start: 12;
-    padding-top: auto;
+    float: left;
 }
 .big-coffee{
     grid-row-start: 2;
     grid-row-end: 4;
-    grid-column-start: 2;
-    grid-column-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
 .main-text{
     grid-row-start:2;
-    grid-column-start:6;
-    grid-column-end:10;
+    grid-column-start:5;
+    grid-column-end:12;
 }
 .coffee-list{
     grid-row-start:3;
     grid-column-start:6;
-    grid-column-end:13;
+    grid-column-end: 13;
+    display: flex;
+    justify-content: space-evenly;
 }
 .big-card{
     grid-row-start:3;
@@ -68,14 +73,25 @@ body{
     grid-column-end:5;
 }
 #be-active-text{
+    font-weight: bold;
     color: red;
 }
 #barnsley-text{
+    font-weight: bolder;
     color: brown;
+}
+#little-coffee-title{
+    font-weight: bold;
+    font-size: 20px;
+}
+#little-coffee-text{
+    font-size: 15px;
+    color:#c47e04;
 }
 #coffee-text{
     color:brown;
 }
 #top-packs-text{
+    font-weight: bold;
     color:gray;
 }
